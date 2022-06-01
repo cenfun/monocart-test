@@ -1,0 +1,19 @@
+{
+    "name": "monocart-test",
+    "version": "1.0.1",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "start": "npx monocart test"
+    },
+    "dependencies": {
+        "@playwright/test": "^1.22.2",
+        "monocart": "^1.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.4.1",
+        "eslint-config-plus": "^1.0.3",
+        "eslint-plugin-chain": "^2.0.0",
+        "eslint-plugin-html": "^6.2.0"
+    }
+}
