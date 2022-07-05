@@ -43,6 +43,13 @@ test('before describe', () => {
 
 });
 
+
+test('flaky case', ({ browserName }, testInfo) => {
+
+    expect(testInfo.retry).toBe(1);
+
+});
+
 test.describe('two tests', () => {
     test('one', async () => {
         // ...
@@ -54,6 +61,11 @@ test.describe('two tests', () => {
         });
 
         test('failed case', () => {
+
+            console.log('stdout: failed case log', config);
+
+            console.error('stderr: failed case error');
+
             expect('passed').toBe('failed');
         });
 
