@@ -17,7 +17,7 @@ npx monocart test
 - [tests/home/home.job.js](tests/home/home.job.js)
 
 ## Report
-[https://cenfun.github.io/playwright-report-grid/](https://cenfun.github.io/playwright-report-grid/)
+[https://cenfun.github.io/monocart-reporter/](https://cenfun.github.io/monocart-reporter/)
 
 ## How to Debug with VSCode
 * Enable "Debug > Node: Auto Attach" with "on" in Preferences Settings
