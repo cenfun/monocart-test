@@ -16,7 +16,7 @@ npx monocart test
 - [tests/app/app.job.js](tests/app/app.job.js)
 - [tests/home/home.job.js](tests/home/home.job.js)
 
-## Report
+## Test Reports
 [https://cenfun.github.io/monocart-reporter/](https://cenfun.github.io/monocart-reporter/)
 
 ## How to Debug with VSCode
