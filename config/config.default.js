@@ -7,9 +7,7 @@ module.exports = function(option) {
     };
 
     return {
-        use: {
-            config: config
-        },
+        use: config,
         projects: [
             // {
             //     name: 'Desktop Firefox',

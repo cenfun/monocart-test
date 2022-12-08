@@ -3,12 +3,12 @@ const Util = require('../../lib/util.js');
 const EC = require('eight-colors');
 
 let config;
-//single page for all tests
+// single page for all tests
 let page;
 
 test.beforeAll(async ({ browserName, browser }, TestInfo) => {
     console.log(EC.magenta('Before app tests:'), browserName);
-    config = TestInfo.project.use.config;
+    config = TestInfo.project.use;
     page = await browser.newPage();
     await page.context().addInitScript({
         path: config.clientPath
@@ -36,8 +36,8 @@ test('open a page from config url', async () => {
 
 test('before describe', () => {
 
-    //test() can only be called in a test file
-    //no test in test
+    // test() can only be called in a test file
+    // no test in test
     // test('inside', () => {
     // });
 

@@ -10,7 +10,7 @@ class HomePage {
     }
 
     async init() {
-        //for client script
+        // for client script
         console.log(`addInitScript: ${this.config.clientPath}`);
         await this.context.addInitScript({
             path: this.config.clientPath
