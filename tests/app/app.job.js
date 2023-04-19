@@ -44,7 +44,7 @@ test('before describe', () => {
 });
 
 
-test('flaky case', ({ browserName }, testInfo) => {
+test('@flaky case', ({ browserName }, testInfo) => {
 
     expect(testInfo.retry).toBe(1);
 
@@ -60,7 +60,7 @@ test.describe('two tests', () => {
             // ...
         });
 
-        test('failed case', () => {
+        test('@failed case', () => {
 
             console.log('stdout: failed case log', config);
 
@@ -84,12 +84,12 @@ test.describe('two tests', () => {
         });
     });
 
-    test('skipped test', () => {
+    test('@skipped test', () => {
         test.skip();
         console.log('skipped');
     });
 
-    test.skip('skipped case', () => {
+    test.skip('@skipped case', () => {
         expect('skipped').toBe('skipped');
     });
 
