@@ -16,13 +16,11 @@ module.exports = {
     },
 
     'plugins': [
-        'chain',
         'html'
     ],
 
     'extends': [
-        'plus',
-        'plugin:chain/recommended'
+        'plus'
     ],
 
     'parserOptions': {

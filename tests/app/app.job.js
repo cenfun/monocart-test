@@ -8,7 +8,7 @@ let page;
 
 test.beforeAll(async ({ browserName, browser }, TestInfo) => {
     console.log(EC.magenta('Before app tests:'), browserName);
-    config = TestInfo.project.use;
+    config = TestInfo.config.metadata;
     page = await browser.newPage();
     await page.context().addInitScript({
         path: config.clientPath

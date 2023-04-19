@@ -1,5 +1,5 @@
 module.exports = function(option) {
-    const config = {
+    const metadata = {
         name: 'monocart-test',
         env: 'prod',
         url: 'https://github.com/cenfun/monocart',
@@ -7,7 +7,7 @@ module.exports = function(option) {
     };
 
     return {
-        use: config,
+        metadata,
         projects: [
             // {
             //     name: 'Desktop Firefox',
