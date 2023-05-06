@@ -4,15 +4,16 @@
     "description": "",
     "private": true,
     "scripts": {
-        "test": "npx monocart test"
+        "test": "npx monocart test",
+        "link": "sf link ../monocart -f"
     },
     "license": "MIT",
     "dependencies": {
-        "@playwright/test": "^1.32.3",
+        "@playwright/test": "^1.33.0",
         "monocart": "^1.1.0"
     },
     "devDependencies": {
-        "eslint": "^8.38.0",
+        "eslint": "^8.40.0",
         "eslint-config-plus": "^1.0.6",
         "eslint-plugin-html": "^7.1.0"
     }
